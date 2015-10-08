@@ -43,7 +43,9 @@ var ledZeppelin = Band.create({name: 'Led Zeppelin', songs: [blackDog]});
 var pearlJam = Band.create({name: 'Pearl Jam', songs: [daughter, yellowLedbetter]});
 var fooFighters = Band.create({name: 'Foo Fighters', songs: [pretender]});
 
-bands.get('content').pushObjects([ledZeppelin, pearlJam, fooFighters])
+
+var bands = BandsCollection.create();
+bands.get('content').pushObjects([ledZeppelin, pearlJam, fooFighters]);
 
 export default Ember.Route.extend({
   model: function (){
