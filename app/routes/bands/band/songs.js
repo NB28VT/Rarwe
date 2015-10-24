@@ -16,5 +16,6 @@ export default Ember.Route.extend({
       band.get('songs').pushObject(song);
       controller.set('title', '');
     }
+
   }
 });
